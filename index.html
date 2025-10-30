@@ -2,50 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Fantasy Adventure — MMP100</title>
   <meta name="description" content="An HTML and CSS project for MMP100">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Minimal fallback styles if styles.css is not present */
-    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background: #0b1220; color:#e6eef8; }
-    .wrap { max-width:960px; margin:48px auto; padding:24px; }
-    header { text-align:center; margin-bottom:24px }
-    h1 { font-size:2.2rem; margin:0 0 8px }
-    p.lead { color:#b9c7d9 }
-    .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.04); padding:18px; border-radius:10px }
-    .btn { display:inline-block; margin-top:12px; padding:10px 14px; background:#2e9eff; color:white; text-decoration:none; border-radius:8px }
-    footer { margin-top:28px; font-size:0.9rem; color:#a8bacf; text-align:center }
-  </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1>Fantasy Adventure</h1>
-      <p class="lead">An HTML and CSS project for MMP100 — preview for GitHub Pages</p>
+      <div class="brand">
+        <img src="assets/logo.svg" alt="" aria-hidden="true">
+        <div>
+          <h1>Fantasy Adventure</h1>
+          <p class="lead">An HTML and CSS project for MMP100 — GitHub Pages preview</p>
+        </div>
+      </div>
     </header>
 
     <main class="card">
-      <section>
-        <h2>About this project</h2>
-        <p>This repository contains the static HTML and CSS source for a small class project. If your site has a <code>styles.css</code> file at the repository root, it will be used automatically. Otherwise the page falls back to simple built-in styles so you can preview the content immediately.</p>
+      <section class="hero">
+        <div class="panel">
+          <h2>About this project</h2>
+          <p>This repository contains the static HTML and CSS source for a small class project. The page uses <code>styles.css</code> at the repo root; if that file is missing a minimal inline fallback still renders.</p>
+          <p>To customize the site, add images to <code>assets/</code>, edit this file, or replace it with your own project pages.</p>
+          <a class="btn" href="https://github.com/titusdanielstd-netizen/fantasyadventure">Open repository on GitHub</a>
+        </div>
 
-        <p>If you already have an <code>index.html</code> in the repo root with your own markup, keep that file and remove this one — GitHub Pages serves the file named <code>index.html</code> at the site root.</p>
-
-        <a class="btn" href="https://github.com/titusdanielstd-netizen/fantasyadventure">Open repository on GitHub</a>
+        <div class="panel">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60" alt="Fantasy landscape (placeholder)">
+        </div>
       </section>
 
       <section style="margin-top:18px">
-        <h3>Preview notes</h3>
+        <h3>Publish notes</h3>
         <ul>
-          <li>To publish this site, enable GitHub Pages in the repository Settings and choose the <strong>main</strong> branch and <strong>/ (root)</strong> folder.</li>
-          <li>The Pages URL will usually be: <code>https://titusdanielstd-netizen.github.io/fantasyadventure/</code></li>
+          <li>Enable GitHub Pages in Settings → Pages, choose Branch: <strong>main</strong> and Folder: <strong>/ (root)</strong>.</li>
+          <li>Site will appear at: <code>https://titusdanielstd-netizen.github.io/fantasyadventure/</code> after a minute or two.</li>
         </ul>
       </section>
     </main>
 
     <footer>
-      Built for MMP100 • Generated index.html for GitHub Pages preview
+      Built for MMP100 • Generated preview for GitHub Pages
     </footer>
   </div>
 </body>
